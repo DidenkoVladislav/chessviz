@@ -1,0 +1,12 @@
+d2-d4 d7-d6
+Qd1-d2 e7-e5
+a2-a4 e5-e4
+Qd2-f4 f7-f5
+h2-h3 Bf8-e7
+Qf4-h2 Bc8-e6
+Ra1-a3 c7-c5
+Ra3-g3 Qd8-a5+
+Nb1-d2 Be7-h4
+f2-f3 Be6-b3
+d4-d5 e4-e3
+c2-c4 f5-f4 
