@@ -20,6 +20,7 @@ void chessboard_constructor(ChessBoard *chb)
     chb->can_black_short_castle = 1;
     chb->can_white_long_castle = 1;
     chb->can_white_short_castle = 1;
+    chb->is_test = 0;
     set_default_board(chb);
 }
 
@@ -174,10 +175,10 @@ void show_board(ChessBoard *chb)
 
 int select_figure(ChessBoard *chb)
 {
-    char input_string[7] = {'\0'}, ch;
-    char x1;
+    char input_string[7] = {'\0'}, ch = '\0';
+    char x1 = '\0';
     uint shift = 0;
-    int y1;
+    int y1 = 0;
 
     for (int i = 0; i < 6; ++i)
     {
