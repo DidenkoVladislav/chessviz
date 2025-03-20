@@ -1,0 +1,11 @@
+e2-e4 c7-c5
+Ng1-f3 e7-e6
+d2-d4 c5xd4
+Nf3xd4 Ng8-f6
+Nb1-c3 a7-a6
+Bc1-e3 Qd8-c7
+f2-f4 b7-b5
+a2-a3 Bc8-b7
+Qd1-f3 Nb8-c6
+O-O-O Bf8-e7
+g2-g4 O-O-O

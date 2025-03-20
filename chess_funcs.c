@@ -197,10 +197,10 @@ int select_figure(ChessBoard *chb)
         {
             break;
         }
-        if ((i == 3) && (strcmp(input_string, "O-O\n") == 0))
+        if ((i == 3) && ((strcmp(input_string, "O-O ") == 0) || (strcmp(input_string, "O-O\n") == 0)))
             return -2;
 
-        if ((i == 5) && (strcmp(input_string, "O-O-O\n") == 0))
+        if ((i == 5) && ((strcmp(input_string, "O-O-O ") == 0) || (strcmp(input_string, "O-O-O\n") == 0)))
             return -3;
     }
 
@@ -525,6 +525,9 @@ int select_target(ChessBoard *chb)
     y2--;
     x2 -= 'a';
 
+    if (chb->is_test)
+        print_move(x2, y2);
+
     if (chb->moves_matrix[(int)x2][y2] != move_type)
     {
         if (chb->moves_matrix[(int)x2][y2] == 0)
@@ -543,9 +546,6 @@ int select_target(ChessBoard *chb)
             exit_failure(chb);
         }
     }
-
-    if (chb->is_test)
-        print_move(x2, y2);
 
     switch (chb->board[chb->cur_x1][chb->cur_y1].type)
     {

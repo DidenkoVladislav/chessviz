@@ -84,7 +84,7 @@ int main(int argc, char const *argv[])
         if (chb->player == black)
             chb->move_counter++;
         chb->player = !chb->player;
-    } while ((ch = getchar()) != 'q' && ch != EOF);
+    } while ((ch = getchar()) != 'q' && (ch != EOF));
 
     destroy_chessboard(chb);
 
