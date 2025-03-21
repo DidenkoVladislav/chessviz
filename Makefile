@@ -9,9 +9,9 @@ stalemate:
 enpassant:
 	./chessviz --test <enpassant.txt >result.txt
 shortcastle:
-	./chessviz --test <shortcastle.txt
+	./chessviz --test <shortcastle.txt >result.txt
 longcastle:
-	./chessviz --test <longcastle.txt
+	./chessviz --test <longcastle.txt >result.txt
 valgrind:
 	valgrind --leak-check=full --show-leak-kinds=all ./chessviz
 valgrind2:
