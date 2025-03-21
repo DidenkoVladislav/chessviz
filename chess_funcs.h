@@ -52,6 +52,8 @@ typedef struct
     bool is_test;
 } ChessBoard;
 
+void start_game(int argc, char const *argv[]);
+
 void chessboard_constructor(ChessBoard *chb);
 void print_move(int x, int y);
 CHP **create_board(void);
